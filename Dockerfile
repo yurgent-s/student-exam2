@@ -6,7 +6,7 @@ RUN yum update -y && \
     yum install epel-release -y && \
     yum --disablerepo="*" --enablerepo="epel" install python34 -y && \
     curl -O https://bootstrap.pypa.io/get-pip.py && \
-    /usr/bin/python3.4 get-pip.py && \
+    /usr/bin/python3.4 get-pip.py &&\
     python3 --version
 
 COPY . /usr/local/epam
